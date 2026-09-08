@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome Library for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navbar Section -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">My Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <h1>Hello, I'm <span>Your Name</span></h1>
+            <h2>Front-End Web Developer</h2>
+            <p>I build clean, responsive, and user-friendly websites with a focus on thoughtful design and solid code. Welcome to my corner of the web.</p>
+            <a href="#contact" class="btn">Contact Me</a>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about-section">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-subtitle">A little about who I am and what I do</p>
+
+        <div class="about-profile">
+            <img src="WhatsApp Image 2026-08-25 at 11.33.10 AM.jpeg" alt="Profile Picture" class="profile-img">
+            <p class="about-text">
+                I'm a front-end web developer who enjoys turning ideas into clean, functional interfaces. I care about accessibility, performance, and writing code that other developers can easily read.
+            </p>
+        </div>
+
+        <div class="about-cards">
+            <div class="card">
+                <i class="fa-solid fa-graduation-cap card-icon"></i>
+                <h3>Education</h3>
+                <p>B.Sc. in Computer Science, graduated 2023. Continuously learning through online courses and projects.</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-briefcase card-icon"></i>
+                <h3>Experience</h3>
+                <p>1+ year building responsive web applications and side projects.</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-bullseye card-icon"></i>
+                <h3>Interests</h3>
+                <p>UI/UX Design, Open Source Contributions, and exploring new web tools.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <h2 class="section-title">My Skills</h2>
+        <p class="section-subtitle">Technologies and tools I work with</p>
+
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fa-brands fa-html5 skill-icon html-color"></i>
+                <h3>HTML</h3>
+            </div>
+            <div class="skill-card">
+                <i class="fa-brands fa-css3-alt skill-icon css-color"></i>
+                <h3>CSS</h3>
+            </div>
+            <div class="skill-card">
+                <i class="fa-brands fa-js skill-icon js-color"></i>
+                <h3>JavaScript</h3>
+            </div>
+            <div class="skill-card">
+                <i class="fa-brands fa-git-alt skill-icon git-color"></i>
+                <h3>Git</h3>
+            </div>
+            <div class="skill-card">
+                <i class="fa-brands fa-github skill-icon github-color"></i>
+                <h3>GitHub</h3>
+            </div>
+            <div class="skill-card">
+                <i class="fa-solid fa-mobile-screen-button skill-icon responsive-color"></i>
+                <h3>Responsive Design</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <h2 class="section-title">Projects</h2>
+        <p class="section-subtitle">A few things I've built recently</p>
+
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="WhatsApp Image 2026-08-25 at 1.00.48 PM - Shortcut.lnk" alt="E-Commerce Landing Page">
+                <h3>E-Commerce Landing Page</h3>
+                <p>A simple and clean landing page with product grids, cart preview, and smooth animations.</p>
+                <a href="#" class="btn-outline">View Project</a>
+            </div>
+
+            <div class="project-card">
+                <img src="WhatsApp Image 2026-08-25 at 11.33.10 AM.jpeg" alt="Task Manager App">
+                <h3>Task Manager App</h3>
+                <p>A simple todo list app with drag-and-drop, local storage, and a clean UI.</p>
+                <a href="#" class="btn-outline">View Project</a>
+            </div>
+
+            <div class="project-card">
+                <img src="WhatsApp Image 2026-08-25 at 11.33.42 AM.jpeg" alt="Weather Dashboard">
+                <h3>Weather Dashboard</h3>
+                <p>A weather app that displays current conditions and forecasts with a clean visual layout.</p>
+                <a href="#" class="btn-outline">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="contact-section">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">Have a project in mind? Send me a message</p>
+
+        <!-- Contact form with method="GET" as required -->
+        <form action="#" method="GET" class="contact-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-block">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Your Name. All rights reserved.</p>
+            <div class="social-links">
+                <!-- Social Media Links (GitHub / LinkedIn) -->
+                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
